@@ -1,1 +1,3 @@
-web: gunicorn {{project_name}}.wsgi
+web: gunicorn zmeodz.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
