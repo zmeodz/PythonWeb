@@ -1,0 +1,1 @@
+web: gunicorn zmeodz.wsgi --log-file -
