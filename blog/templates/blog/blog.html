@@ -1,0 +1,10 @@
+{% {% extends "pages/base.html" %}}
+
+{% block tilte %}Blog{% endblock %}}
+
+{% block  %}
+{% for post in Posts %}
+    <h4>{{post.date|date:"d-m-Y"}}</h4>
+{% endfor %}
+{% endblock  %}
+
