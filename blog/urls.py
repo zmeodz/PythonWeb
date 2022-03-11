@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
-urlpattern = [
+
+urlpatterns = [
     path('', views.list),
+    path('<int:id>', views.post),
 ]
