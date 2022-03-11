@@ -19,11 +19,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('blog/', include('blog.urls'))
-]
-def Http404(request, exception, template_name="home.views.error"):
-    response = render_to_response(template_name)
-    response.status_code = 404
-    return response
-
-def handler500(request, *args, **argv):
-    return render(request, 'home.views.error', status=500)
+] 
+handler500 = "home.views.error"

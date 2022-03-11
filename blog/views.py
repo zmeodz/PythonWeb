@@ -13,5 +13,4 @@ def post(request, id):
         post = Post.objects.get(id=id)
     except Post.DoesNotExist:
         raise Http404("Bài viết không tồn tại")
-    
     return render(request, 'blog/post.html', {'post': post})
