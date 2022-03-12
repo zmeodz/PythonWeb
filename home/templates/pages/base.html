@@ -25,10 +25,10 @@
             </div>
              <div class="col-sm-1">
                 {%if user.username %}
-                    <p>Xin chào {{user.username}}
-                    <p><a href="{% url 'logout' %}">Đăng xuất </a><p>
+                    <p>Hello, {{user.username}}
+                    <p><a href="{% url 'logout' %}">Logout </a><p>
                 {% else %}
-                <p><a href="{% url 'register' %}">Đăng ký</a><a href="{% url 'login' %}">Đăng nhập </a><p>
+                <p><a href="{% url 'register' %}">Register</a> | <a href="{% url 'login' %}">Login</a><p>
                 {% endif %}
             </div>
         </div>
@@ -54,7 +54,7 @@
     </div>
     <footer>
             <div class="container-fluid">
-                <a href ="#"> Facebook</a>|<a href="#">Twitter</a>|<a href="#">Google+|</a>
+                <a href ="#"> Facebook</a> | <a href="#">Twitter</a> | <a href="#">Google+ </a>
             </div>
     </footer>
 </body>
